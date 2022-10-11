@@ -1,0 +1,143 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--time-animation), box-shadow var(--time-animation);
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+
+.form-title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color-text);
+}
+
+.personal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.personal-title {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.personal-input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    transition: outline-color var(--time-animation);
+
+    pointer-events: painted;
+    &:focus,&:hover {
+        outline: 1px solid var(--active-bg-color);
+        outline-color: var(--active-bg-color);
+        cursor: pointer;
+    }
+}
+
+.personal-input:focus+svg,
+.personal-input:hover+svg {
+    fill: var(--active-bg-color);
+}
+
+.contract .personal-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0;
+}
+
+.personal-icon {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    translate: 0 -50%;
+    
+}
+
+.personal.comment {
+    margin-bottom: 20px;
+
+}
+
+.personal-comment {
+    display: block;
+    height: 120px;
+    padding-left: 16px;
+    resize: none;
+    outline: none;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+
+.personal-contract {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-color-text);
+    border-radius: 2px;
+}
+
+.contract {
+    flex-direction: row;
+    transition: fill var(--time-animation);
+}
+
+.contarct-ok:checked+label span {
+    background-color: var(--active-bg-color);
+}
+
+.contarct-ok:checked+label svg {
+    fill: var(--white-color);
+}
+
+.modal-icon-contract {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: transparent;
+}
+
+.submit {
+    display: block;
+    padding: 10px 52px;
+    margin: 0 auto;
+}
+
+.terms-contract {
+    color: var(--active-bg-color);
+}

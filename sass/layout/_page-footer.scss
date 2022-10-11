@@ -1,0 +1,77 @@
+.footer {
+    background-color: var(--hero-foot-bg);
+    padding: 60px 0;
+
+    &__warp {
+        display: flex;
+        align-items: baseline;
+        gap: 93px;
+    }
+
+    &__logo {
+        color: var(--white-color)
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--white-color);
+    }
+
+    &--social {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__link {
+        color: var(--white-color)
+    }
+
+    &--reverse {
+        background-color: var(--footer-icon);
+        fill: var(--white-color);
+    }
+}
+
+.address {
+    font-style: normal;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.71;
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+        
+    }
+
+    &__link {
+        color: var(--footer-color-a);
+    }
+}
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+
+    &__contact {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--hero-foot-bg);
+        padding: 15px 16px;
+        width: 350px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: var(--white-color);
+    
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    
+}

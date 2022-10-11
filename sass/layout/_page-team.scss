@@ -1,0 +1,58 @@
+.sec-team {
+    background-color: var(--team-butt-bg);
+}
+
+.team {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    gap: 30px;
+
+    &__list {
+        width: 270px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: var(--white-color);
+    }
+    &__wrap {
+        padding: 30px 0;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.19;
+        color: var(--title-color-text);
+    }
+    &__page {
+        margin-bottom: 16px;
+    }
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--white-color);
+        fill: var(--icon);
+        transition: background-color var(--time-animation), fill var(--time-animation);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--active-bg-color);
+            fill: var(--white-color);
+        }
+    }
+}
+
+

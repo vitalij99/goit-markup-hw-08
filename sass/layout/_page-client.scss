@@ -1,0 +1,21 @@
+.clients {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    &__link {
+        display: flex;
+        padding: 15px 32px;
+        border: 1px solid var(--border-clients);
+        border-radius: 4px;
+        fill: var(--icon);
+        transition: border-color var(--time-animation), fill var(--time-animation);
+    
+        &:hover,
+        &:focus {
+            border-color: var(--active-bg-color);
+            fill: var(--active-bg-color);
+        }
+    }
+}
+
