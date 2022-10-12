@@ -1,15 +1,19 @@
 .modal {
+    display: none;
+
+
+
     position: absolute;
     top: 50%;
     left: 50%;
     width: 528px;
     height: 581px;
     padding: 40px;
-    background-color: var(--white-color);
+    background-color: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--time-animation), box-shadow var(--time-animation);
+    transition: transform $time-animation, box-shadow $time-animation;
 }
 
 .backdrop.is-hidden .modal {
@@ -24,7 +28,7 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-color-text);
+    color: $title-color-text;
 }
 
 .personal {
@@ -47,19 +51,19 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: 1px solid transparent;
-    transition: outline-color var(--time-animation);
+    transition: outline-color $time-animation;
 
     pointer-events: painted;
     &:focus,&:hover {
-        outline: 1px solid var(--active-bg-color);
-        outline-color: var(--active-bg-color);
+        outline: 1px solid $active-bg-color;
+        outline-color: $active-bg-color;
         cursor: pointer;
     }
 }
 
 .personal-input:focus+svg,
 .personal-input:hover+svg {
-    fill: var(--active-bg-color);
+    fill: $active-bg-color;
 }
 
 .contract .personal-title {
@@ -108,21 +112,21 @@
     display: inline-block;
     width: 16px;
     height: 15px;
-    border: 2px solid var(--title-color-text);
+    border: 2px solid $title-color-text;
     border-radius: 2px;
 }
 
 .contract {
     flex-direction: row;
-    transition: fill var(--time-animation);
+    transition: fill $time-animation;
 }
 
 .contarct-ok:checked+label span {
-    background-color: var(--active-bg-color);
+    background-color: $active-bg-color;
 }
 
 .contarct-ok:checked+label svg {
-    fill: var(--white-color);
+    fill: $white-color;
 }
 
 .modal-icon-contract {
@@ -139,5 +143,5 @@
 }
 
 .terms-contract {
-    color: var(--active-bg-color);
+    color: $active-bg-color;
 }

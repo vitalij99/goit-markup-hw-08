@@ -1,8 +1,9 @@
 body {
     font-family: 'Roboto', 'Verdana', 'Arial', 'snas-serif';
-    color: var(--primary-color-text);
-    background-color: var(--white-color);
+    color: $primary-color-text;
+    background-color: $white-color;
     letter-spacing: 0.03em;
+
 }
 
 .list {

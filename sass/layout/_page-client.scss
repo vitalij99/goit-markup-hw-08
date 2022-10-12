@@ -1,20 +1,40 @@
 .clients {
+
+
     display: flex;
     justify-content: center;
     gap: 30px;
-
-    &__link {
-        display: flex;
-        padding: 15px 32px;
-        border: 1px solid var(--border-clients);
-        border-radius: 4px;
-        fill: var(--icon);
-        transition: border-color var(--time-animation), fill var(--time-animation);
+    flex-wrap: wrap;
     
+    @media screen and (min-width: $pc) {
+        flex-wrap: nowrap;
+    }
+}
+.clients__link {    
+    display: flex;
+    justify-content: center;
+    width: 210px;
+    padding: 15px 32px;
+    border: 1px solid $border-clients;
+    border-radius: 4px;
+    fill: $icon;
+    transition: border-color $time-animation, fill $time-animation;
+    
+
+    &:active {
+            border-color: $active-bg-color;
+            fill: $active-bg-color;
+        }
+    @media screen and (min-width: $tablet) {
+        width: 300px;
+        background-color: tomato;
+    }
+    @media screen and (min-width: $pc) {
+        width: 170px;
         &:hover,
         &:focus {
-            border-color: var(--active-bg-color);
-            fill: var(--active-bg-color);
+            border-color: $active-bg-color;
+            fill: $active-bg-color;
         }
     }
 }
