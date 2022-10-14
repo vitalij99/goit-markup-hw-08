@@ -20,31 +20,83 @@
   <body>
     <header class="page-header">
       <div class="page-header__box container">
-        <nav class="page-navigation"  >
-          <a href="./index.html" class="logo"
-            ><span class="web-logo">Web</span>Studio</a
-          >
-          <ul class="navigation list">
-            <li class="navigation__item"><a href="./index.html" class="navigation__link activ">Студія</a></li>
-            <li class="navigation__item"><a href="./portfolio.html" class="navigation__link activ current--page">Портфоліо</a></li>
-            <li class="navigation__item"><a href="" class="navigation__link activ">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="contact list">
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__link contact__icon--black activ">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"  ></use>
-              </svg>
-              info@devstudio.com
+
+        <div class="page-header__warps">
+          <nav class="page-navigation"  >
+            <a href="./index.html" class="logo">
+              <span class="web-logo">Web</span>Studio
+            </a>
+            <ul class="navigation list">
+              <li class="navigation__item"><a href="./index.html" class="navigation__link activ">Студія</a></li>
+              <li class="navigation__item"><a href="./portfolio.html" class="navigation__link activ current--page">Портфоліо</a></li>
+              <li class="navigation__item"><a href="" class="navigation__link activ">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="contact list">
+            <li class="contact__item">
+              <a href="mailto:info@devstudio.com" class="contact__link contact__icon--black activ">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"  ></use>
+                </svg>
+                info@devstudio.com
+              </a></li>
+            <li class="contact__item"><a href="tel:+380961111111" class="contact__link contact__icon--black activ">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+              +38 096 111 11 11
             </a></li>
-          <li class="contact__item"><a href="tel:+380961111111" class="contact__link contact__icon--black activ">
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-            +38 096 111 11 11
-          </a></li>
-        </ul>
+          </ul>
+        </div>
+        <button type="button" class="mobile-menu-btn js-open-menu" aria-expanded="false">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-burger-menu"  ></use>
+          </svg>  
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu-btn js-close-menu">
+                <svg width="18" height="18">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-navigation list">
+                <li class="mobile-navigation__item">
+                    <a class="mobile-navigation__link activ" href="./index.html">Студія</a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a class="mobile-navigation__link activ" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a class="mobile-navigation__link activ" href="#">Контакти</a>
+                </li>
+            </ul>
+            <div>
+              <ul class="mobile-contacts list">
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link activ" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link activ" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-social list">
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link activ" href="#" lang="en">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link activ" href="#" lang="en">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link activ" href="#" lang="en">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link activ" href="#" lang="en">Linkedin</a>
+                </li>
+            </ul>
+            </div>
+        </div>
       </div>
     </header>
 
@@ -60,7 +112,7 @@
             <li><button type="button" class="filters__btn">Маркетинг</button></li>
           </ul>
           <ul class="portfolio list">
-            <li>
+            <li class="portfolio__item">
               <a href="" class="portfolio__wrapper">
                 <div class="portfolio__overlay">
                   <img
@@ -80,7 +132,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio__item">
               <a href="" class="portfolio__wrapper">
                 <div class="portfolio__overlay">
                   <img
@@ -102,7 +154,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio__item">
               <a href="" class="portfolio__wrapper">
                 <div class="portfolio__overlay">
                   <img
@@ -122,7 +174,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio__item">
               <a href="" class="portfolio__wrapper">
                 <div class="portfolio__overlay">
                   <img
@@ -142,7 +194,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio__item">
               <a href="" class="portfolio__wrapper">
                 <div class="portfolio__overlay">
                   <img
@@ -162,7 +214,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio__item">
               <a href="" class="portfolio__wrapper">
                 <div class="portfolio__overlay">
                   <img
@@ -182,7 +234,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio__item">
               <a href="" class="portfolio__wrapper">
                 <div class="portfolio__overlay">
                   <img
@@ -202,7 +254,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio__item">
               <a href="" class="portfolio__wrapper">
                 <div class="portfolio__overlay">
                   <img
@@ -222,7 +274,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio__item">
               <a href="" class="portfolio__wrapper">
                 <div class="portfolio__overlay">
                   <img
@@ -249,7 +301,7 @@
 
     <footer class="footer">
       <div class="container footer__warp">
-        <div>
+        <div class="footer__warps">
           <a href="./index.html" class="logo footer__logo"
           ><span class="web-logo">Web</span>Studio</a>
           <address class="address">
@@ -263,19 +315,19 @@
                 >
               </li>
               <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="contact__icon--black activ"
+                <a href="mailto:info@devstudio.com" class="address__link activ"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="address__item">
-                <a href="tel:+380961111111" class="contact__icon--black activ">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="address__link activ">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer__warps">
           <strong class="footer__title">ПРИЄДНУЙТЕСЬ</strong>
-          <ul class="footer--social list">
+          <ul class="social list">
             <li>
               <a href="" class="social__link footer--reverse">
                 <svg class="social-icon" width="20" height="20">
@@ -306,7 +358,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer__warps">
           <strong class="footer__title">Підпишіться на розсилку</strong>
           <form class="footer-form">
             <input type="email" class="footer-form__contact" required placeholder="E-mail">

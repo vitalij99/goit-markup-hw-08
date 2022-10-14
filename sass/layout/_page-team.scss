@@ -20,9 +20,12 @@
     border-radius: 0px 0px 4px 4px;
     background-color: $white-color;
     
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (min-width: $mobile) and (max-width: calc($tablet - 1px)) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
+    
 }
 
 .team__wrap {
