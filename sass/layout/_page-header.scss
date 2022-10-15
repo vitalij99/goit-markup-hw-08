@@ -7,11 +7,12 @@
 }
 
 .page-header__box { 
-    @media screen and (min-width: $mobile) and (max-width: calc( $tablet - 1px)  )  {
+    @media screen and (max-width: calc( $tablet - 1px)  )  {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 16px 10px 16px 15px;
+        flex-wrap: nowrap;
     }    
     @media screen and (min-width: $tablet) {
         
@@ -20,9 +21,7 @@
 
 }
 
-.page-header__warps { 
-    @media screen and (min-width: $mobile) {}
-        
+.page-header__warps {         
     @media screen and (min-width: $tablet) {
         display: flex;
         justify-content: space-between;
@@ -38,9 +37,6 @@
 .navigation {
     display: none;
 
-    @media screen and (min-width: $mobile) {
-        
-    }
     @media screen and (min-width: $tablet) {
 
         display: flex;
