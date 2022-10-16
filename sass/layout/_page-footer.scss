@@ -4,7 +4,7 @@
     text-align: center;
 }
 .footer__warps {
-    @media screen and (min-width: $mobile) and (max-width: calc($tablet - 1px)) {
+    @media screen and (max-width: calc($tablet - 1px)) {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
@@ -76,7 +76,7 @@
     border-radius: 4px;
     background-color: var(--hero-foot-bg);
     padding: 15px 16px;
-    width: 350px;
+    max-width: 350px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;

@@ -2,14 +2,21 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    width: 100% ;
+    max-width: 528px;
     padding: 40px;
     background-color: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform $time-animation, box-shadow $time-animation;
+
+    @media screen and (min-width: $mobile) {
+        width: 95%;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 528px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -20,11 +27,14 @@
 .form-title {
     display: block;
     margin-bottom: 12px;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-color-text;
+    @media screen and (min-width: $mobile) {
+        font-size: 20px;
+    }
 }
 
 .personal {
@@ -36,8 +46,11 @@
 
 .personal-title {
     margin-bottom: 4px;
-    font-size: 14px;
+    font-size: 7px;
     line-height: 1.71;
+    @media screen and (min-width: $mobile) {
+        font-size: 12px;
+    }
 }
 
 .personal-input {
