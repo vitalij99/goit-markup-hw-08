@@ -9,6 +9,9 @@
         color: $title-color-text;
         text-transform: uppercase;
         
+        @media screen and (min-width: $tablet) {
+            text-align: left;
+        }
     }
 
     &__page {
@@ -46,6 +49,10 @@
 }
 
 .section--feature {
-    padding-bottom: 0;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $pc) {
+            padding-bottom: 0;
+        }
     
 }

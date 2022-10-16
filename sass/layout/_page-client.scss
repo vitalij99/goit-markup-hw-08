@@ -20,21 +20,21 @@
     fill: $icon;
     transition: border-color $time-animation, fill $time-animation;
     
-
+    &:hover,
+    &:focus {
+        border-color: $active-bg-color;
+        fill: $active-bg-color;
+    }
     &:active {
             border-color: $active-bg-color;
             fill: $active-bg-color;
         }
     @media screen and (min-width: $tablet) {
-        width: 300px;
+        width: 226px;
     }
     @media screen and (min-width: $pc) {
         width: 170px;
-        &:hover,
-        &:focus {
-            border-color: $active-bg-color;
-            fill: $active-bg-color;
-        }
+        
     }
 }
 

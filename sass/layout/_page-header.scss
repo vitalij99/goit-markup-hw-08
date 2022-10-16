@@ -90,12 +90,12 @@
         color: $active-bg-color
     }
    
-    @media screen and (min-width: $pc) {
-        &:hover,
-        &:focus{
-            color: $active-bg-color
-        }
-    }   
+    
+    &:hover,
+    &:focus{
+        color: $active-bg-color
+    }
+      
 }
 
 .contact {
@@ -104,6 +104,21 @@
 
     &__item {
         display: flex;
+        @media screen and (min-width: $tablet) and (max-width: $pc)  {
+            
+            
+        }
+        @media screen and (min-width: $tablet) and (max-width: $pc) {
+            display: block;
+            .contact__link {
+                padding: 19px 0 5px 0;
+            }
+            
+
+            &:last-child .contact__link {
+                padding: 5px 0 19px 0;
+            }
+        }
     }
 
     &__link {
@@ -111,18 +126,15 @@
         color: $title-color-text;
         display: inline-block;
 
-        @media screen and (min-width: $tablet) {
-            margin-bottom: 10px;
-        }
+        
         
     }
 
     &__icon {
         margin-right: 10px;
     }       
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: $pc) {
         display: block;
-        padding: 21px 0;
     }
     @media screen and (min-width: $pc) {
         display: flex;        

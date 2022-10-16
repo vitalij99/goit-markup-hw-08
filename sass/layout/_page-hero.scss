@@ -1,8 +1,8 @@
 .hero {
     max-width: $mobile;
-    height: 400px;
+    
     background-color: $hero-foot-bg;
-    padding: 118px 0;
+    padding: 125px 0;
     
     margin: 0 auto;
     
@@ -28,8 +28,8 @@
 
     @media screen and (min-width: $pc) {
         max-width: 1600px;
-        height: 600px;
-        padding: 200px 15px;
+        
+        padding: 200px 0;
         font-size: 44px;
 
         background-image: linear-gradient($bg-hero, $bg-hero), url(../images/index/hero/background-desktop.jpg);
@@ -41,7 +41,7 @@
 }
 
 .hero__title {
-    text-align: center;
+    margin: 0 auto;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 26px;
@@ -49,4 +49,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white-color;
+
+    @media screen and (min-width: $tablet) {
+        width: 360px;
+    }
 }

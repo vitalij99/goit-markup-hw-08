@@ -1,9 +1,16 @@
 .filters {
+    max-width: 328px;
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 8px;
+    row-gap: 15px;
     flex-wrap: wrap;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 100%;
+        justify-content: center;
+    }
 
     &__btn {
         font-weight: 500;
