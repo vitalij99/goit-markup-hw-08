@@ -12,7 +12,7 @@
             margin-bottom: 30px;
           }  
         }
-        @media screen and (min-width: $tablet) and (max-width: $pc) {
+        @media screen and (min-width: $tablet) and (max-width: calc($pc - 1px) ) {
             width: 370px;
             flex-basis: calc((100% - 30px)/2 );
         }
