@@ -18,7 +18,8 @@
     @media screen and (min-width: $tablet) {
             display: flex;
             align-items: baseline;
-            gap: 60px;
+            gap: 185px;
+            row-gap: 60px;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -92,8 +93,8 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: $white-color;
-
     margin-bottom: 20px;
+    
     @media screen and (min-width: $tablet) {
             
             width: 450px;

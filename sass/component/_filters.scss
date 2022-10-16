@@ -1,6 +1,6 @@
 .filters {
     max-width: 328px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: left;
     gap: 8px;
@@ -10,6 +10,10 @@
     @media screen and (min-width: $tablet) {
         max-width: 100%;
         justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: $pc) {        
+        margin-bottom: 50px;
     }
 
     &__btn {

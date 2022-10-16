@@ -40,6 +40,11 @@
 }
 .feature__item {
     max-width: 450px;
+    @media screen and (max-width: calc($tablet - 1px) ) {
+        &:not( :last-child ) {
+            margin-bottom: 30px;
+        }
+    }
     @media screen and (min-width: $tablet) {
         width: 354px;
     }  

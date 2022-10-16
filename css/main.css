@@ -109,6 +109,8 @@ button {
 }
 
 .button-sub {
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -289,9 +291,7 @@ button {
 }
 
 .submit {
-  display: block;
   padding: 10px 52px;
-  margin: 0 auto;
 }
 
 .terms-contract {
@@ -310,7 +310,7 @@ button {
 
 .filters {
   max-width: 328px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: left;
   gap: 8px;
@@ -321,6 +321,12 @@ button {
   .filters {
     max-width: 100%;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
   }
 }
 .filters__btn {
@@ -613,7 +619,7 @@ body .js-menu-container.is-open {
 .hero {
   max-width: 480px;
   background-color: #2F303A;
-  padding: 125px 0;
+  padding: 118px 0;
   margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/hero/background-mobile.jpg);
@@ -656,7 +662,7 @@ body .js-menu-container.is-open {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -664,6 +670,13 @@ body .js-menu-container.is-open {
 @media screen and (min-width: 768px) {
   .hero__title {
     width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -706,6 +719,11 @@ body .js-menu-container.is-open {
 
 .feature__item {
   max-width: 450px;
+}
+@media screen and (max-width: 767px) {
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .feature__item {
@@ -871,7 +889,8 @@ body .js-menu-container.is-open {
   .footer__warp {
     display: flex;
     align-items: baseline;
-    gap: 60px;
+    gap: 185px;
+    row-gap: 60px;
     flex-wrap: wrap;
     justify-content: center;
   }
