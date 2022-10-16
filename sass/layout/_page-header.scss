@@ -108,7 +108,7 @@
             
             
         }
-        @media screen and (min-width: $tablet) and (max-width: $pc) {
+        @media screen and (min-width: $tablet) and ( max-width: calc($pc - 1px) ) {
             display: block;
             .contact__link {
                 padding: 19px 0 5px 0;

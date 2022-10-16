@@ -6,7 +6,7 @@
 .footer__warps {
     @media screen and (max-width: calc($tablet - 1px)) {
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom: 60px;
         }
     }
     @media screen and (min-width: $pc) {

@@ -1,9 +1,9 @@
 .portfolio {
 
     @media screen and (min-width: calc($tablet - 1px) ) {
-            display: flex;
-                flex-wrap: wrap;
-                gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }  
     
     &__item {
@@ -73,9 +73,8 @@
         border-top: 0;
 
         @media screen and (min-width: $tablet) {
-            flex-grow: 1;;
-        }
-        
+            flex-grow: 1;
+        }        
     }
 
     &__title {
@@ -90,7 +89,5 @@
         font-size: 16px;
         line-height: 1.88;
         color: $primary-color-text;
-    }
-
-    
+    }   
 }

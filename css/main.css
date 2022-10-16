@@ -185,7 +185,7 @@ button {
 
 .personal-title {
   margin-bottom: 4px;
-  font-size: 7px;
+  font-size: 10px;
   line-height: 1.17;
 }
 @media screen and (min-width: 480px) {
@@ -273,7 +273,7 @@ button {
   margin-bottom: 30px;
 }
 
-.contarct-ok:checked + label span {
+.contarct-ok:checked + label .personal-contract {
   background-color: #2196F3;
 }
 
@@ -572,7 +572,7 @@ body .js-menu-container.is-open {
 .contact__item {
   display: flex;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__item {
     display: block;
   }
@@ -663,7 +663,7 @@ body .js-menu-container.is-open {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    width: 360px;
+    width: 400px;
   }
 }
 
@@ -774,6 +774,11 @@ body .js-menu-container.is-open {
     gap: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    flex-wrap: nowrap;
+  }
+}
 
 .team__list {
   margin-left: auto;
@@ -853,7 +858,7 @@ body .js-menu-container.is-open {
 
 @media screen and (max-width: 767px) {
   .footer__warps:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
