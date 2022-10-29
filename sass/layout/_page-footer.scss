@@ -13,8 +13,7 @@
         text-align: left;
     }
 }
-.footer__warp {
-    
+.footer__warp {    
     @media screen and (min-width: $tablet) {
             display: flex;
             align-items: baseline;
@@ -27,15 +26,12 @@
         @media screen and (min-width: $pc) {
             flex-wrap: nowrap;
             gap: 93px;
-        }
-    
+        }    
 }
 
 
-.footer__logo {
-    
-    color: $white-color;
-    
+.footer__logo {    
+    color: $white-color;    
 }
 
 .footer__title {
@@ -44,9 +40,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: $white-color;
-
-    
+    color: $white-color;    
 }
 
 .footer--social {
@@ -95,8 +89,7 @@
     color: $white-color;
     margin-bottom: 20px;
     
-    @media screen and (min-width: $tablet) {
-            
+    @media screen and (min-width: $tablet) {            
             width: 450px;
         }
     @media screen and (min-width: $pc) {
